@@ -18,6 +18,8 @@
 		8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD32597A4C700973BDE /* MapViewController.swift */; };
 		8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD52597A4F500973BDE /* MapViewModel.swift */; };
 		8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD92597A5A600973BDE /* Map.storyboard */; };
+		8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BDB2597AA3000973BDE /* UIViewControllerExtensions.swift */; };
+		8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		8A6C5BD32597A4C700973BDE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8A6C5BD52597A4F500973BDE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		8A6C5BD92597A5A600973BDE /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		8A6C5BDB2597AA3000973BDE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BBB25974B9600973BDE /* Colors.swift */,
+				8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */,
+				8A6C5BDB2597AA3000973BDE /* UIViewControllerExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +357,8 @@
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
 				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,
 				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
+				8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */,
+				8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
