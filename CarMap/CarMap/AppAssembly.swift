@@ -12,6 +12,7 @@ import Swinject
 final class AppAssembly: Assembly {
     
     func assemble(container: Container) {
+        container.register(LoadingIndicatorPresenter.self) { _ in LoadingIndicatorPresenter() }.inObjectScope(.container)
         container.register(BaseService.self) { _ in BaseService() }.inObjectScope(.container)
     }
     

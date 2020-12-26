@@ -28,6 +28,8 @@
 		8A6C5BEC2597B1AD00973BDE /* CarsTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BEB2597B1AD00973BDE /* CarsTransaction.swift */; };
 		8A6C5BEE2597BCAE00973BDE /* AssemblerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BED2597BCAE00973BDE /* AssemblerExtensions.swift */; };
 		8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BEF2597BCD000973BDE /* AppAssembly.swift */; };
+		8A6C5BF22597BF4100973BDE /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */; };
+		8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		8A6C5BEB2597B1AD00973BDE /* CarsTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTransaction.swift; sourceTree = "<group>"; };
 		8A6C5BED2597BCAE00973BDE /* AssemblerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerExtensions.swift; sourceTree = "<group>"; };
 		8A6C5BEF2597BCD000973BDE /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 		8A6C5BBE25979D3C00973BDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
+				8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -386,6 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */,
+				8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */,
+				8A6C5BF22597BF4100973BDE /* LoadingIndicatorView.swift in Sources */,
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
 				8A6C5BE82597B0D200973BDE /* CarsRequestModel.swift in Sources */,
 				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,

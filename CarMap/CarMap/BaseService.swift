@@ -11,11 +11,13 @@ import Alamofire
 
 public class BaseService: NSObject, BaseServiceProtocol {
     
+    let indicatorPresenter: LoadingIndicatorPresenter = inject()
     private let serviceURL = "https://cdn.sixt.io/"
     
     public func fetch<Transaction, RequestModel, ResponseModel>(_ transaction: Transaction, requestModel: RequestModel,
                                                          completion: ((ResponseModel?, NetworkError?) -> Void)?) where Transaction: BaseTransaction<RequestModel, ResponseModel> {
-        // TODO: Display Loading Indicator
+        // Display Loading Indicator
+        self.indicatorPresenter.show()
         
         var serviceUrl = self.serviceURL
         
@@ -42,7 +44,8 @@ public class BaseService: NSObject, BaseServiceProtocol {
                           method: .get,
                           parameters: encodedJsonDictionary,
                           headers: headers).responseData { (response) in
-                            // TODO: Hide Loading Indicator
+                            // Hide Loading Indicator
+                            self.indicatorPresenter.hide()
                             switch response.result {
                             case .success(let value):
                                 do {
