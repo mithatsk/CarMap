@@ -11,6 +11,7 @@ import Foundation
 final class MapViewModel: BaseViewModel {
     
     var cars: [CarModel] = []
+    var annotations: [CarAnnotation] = []
     
     func load() {
         let request = CarsRequestModel()

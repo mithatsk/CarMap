@@ -17,5 +17,5 @@ struct CarModel: Codable {
     let transmission, licensePlate: String
     let latitude, longitude: Double
     let innerCleanliness: String
-    let carImageUrl: String?
+    let carImageUrl: String
 }

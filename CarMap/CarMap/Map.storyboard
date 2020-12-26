@@ -29,6 +29,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PbW-pB-JfW"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="aho-VT-M0F" id="0f2-iJ-Std"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cn0-N4-Ek6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
