@@ -23,6 +23,9 @@
 		8A6C5BE12597ACD000973BDE /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BE02597ACD000973BDE /* BaseService.swift */; };
 		8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BE22597ACEB00973BDE /* BaseServiceProtocol.swift */; };
 		8A6C5BE52597AD8100973BDE /* BaseTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BE42597AD8100973BDE /* BaseTransaction.swift */; };
+		8A6C5BE82597B0D200973BDE /* CarsRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BE72597B0D200973BDE /* CarsRequestModel.swift */; };
+		8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BE92597B0DA00973BDE /* CarModel.swift */; };
+		8A6C5BEC2597B1AD00973BDE /* CarsTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BEB2597B1AD00973BDE /* CarsTransaction.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		8A6C5BE02597ACD000973BDE /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		8A6C5BE22597ACEB00973BDE /* BaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProtocol.swift; sourceTree = "<group>"; };
 		8A6C5BE42597AD8100973BDE /* BaseTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTransaction.swift; sourceTree = "<group>"; };
+		8A6C5BE72597B0D200973BDE /* CarsRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsRequestModel.swift; sourceTree = "<group>"; };
+		8A6C5BE92597B0DA00973BDE /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		8A6C5BEB2597B1AD00973BDE /* CarsTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTransaction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,7 @@
 		8A6C5BD02597A38B00973BDE /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C5BE62597B0C200973BDE /* Models */,
 				8A6C5BD22597A39A00973BDE /* ViewModels */,
 				8A6C5BD12597A39400973BDE /* ViewControllers */,
 				8A6C5BD92597A5A600973BDE /* Map.storyboard */,
@@ -229,6 +236,16 @@
 				8A6C5BD52597A4F500973BDE /* MapViewModel.swift */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A6C5BE62597B0C200973BDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BE72597B0D200973BDE /* CarsRequestModel.swift */,
+				8A6C5BEB2597B1AD00973BDE /* CarsTransaction.swift */,
+				8A6C5BE92597B0DA00973BDE /* CarModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
@@ -364,17 +381,20 @@
 			files = (
 				8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */,
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
+				8A6C5BE82597B0D200973BDE /* CarsRequestModel.swift in Sources */,
 				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,
 				8A6C5BE52597AD8100973BDE /* BaseTransaction.swift in Sources */,
 				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
 				8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */,
 				8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */,
+				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
 				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
 				8A6C5BE12597ACD000973BDE /* BaseService.swift in Sources */,
+				8A6C5BEC2597B1AD00973BDE /* CarsTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

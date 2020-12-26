@@ -19,6 +19,7 @@ final class MapViewController: BaseViewController<MapViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.load()
     }
     
     override func showState() {

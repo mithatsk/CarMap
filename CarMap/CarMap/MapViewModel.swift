@@ -10,8 +10,24 @@ import Foundation
 
 final class MapViewModel: BaseViewModel {
     
+    let service = BaseService()
+    var cars: [CarModel] = []
+    
     func load() {
-        // TODO: Fetch cars to display on map
+        let request = CarsRequestModel()
+        let transaction = CarsTransaction()
+        service.fetch(transaction, requestModel: request) { [weak self] (response, error) in
+            guard let self = self else { return }
+            if let error = error {
+                print(error.description!)
+                self.state = .error(error)
+                return
+            }
+            if let cars = response {
+                self.cars = cars
+                self.state = .show
+            }
+        }
     }
     
 }
