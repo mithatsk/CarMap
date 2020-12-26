@@ -30,6 +30,7 @@
 		8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BEF2597BCD000973BDE /* AppAssembly.swift */; };
 		8A6C5BF22597BF4100973BDE /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */; };
 		8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */; };
+		8A6C5BFD2597CD9D00973BDE /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		8A6C5BEF2597BCD000973BDE /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorPresenter.swift; sourceTree = "<group>"; };
+		8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */,
 				8A6C5BDB2597AA3000973BDE /* UIViewControllerExtensions.swift */,
+				8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
