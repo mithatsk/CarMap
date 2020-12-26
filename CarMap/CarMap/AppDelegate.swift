@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setWindow()
         return true
+    }
+    
+    func setWindow() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Map", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MapViewController")
+        window.rootViewController = viewController
+        window.makeKeyAndVisible()
+        self.window = window
     }
 
 }

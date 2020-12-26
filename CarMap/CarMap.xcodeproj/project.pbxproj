@@ -17,6 +17,9 @@
 		8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BBF25979D4900973BDE /* BaseViewController.swift */; };
 		8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BC425979DAB00973BDE /* BaseViewModel.swift */; };
 		8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BC625979DC800973BDE /* NetworkError.swift */; };
+		8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD32597A4C700973BDE /* MapViewController.swift */; };
+		8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD52597A4F500973BDE /* MapViewModel.swift */; };
+		8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BD92597A5A600973BDE /* Map.storyboard */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		8A6C5BBF25979D4900973BDE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8A6C5BC425979DAB00973BDE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		8A6C5BC625979DC800973BDE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8A6C5BD32597A4C700973BDE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8A6C5BD52597A4F500973BDE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		8A6C5BD92597A5A600973BDE /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,10 +189,37 @@
 		8A6C5BC825979E1800973BDE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C5BD02597A38B00973BDE /* Map */,
 				8A6C5BA0259733B000973BDE /* ViewController.swift */,
 				8A6C5BA2259733B000973BDE /* Main.storyboard */,
 			);
 			name = Screens;
+			sourceTree = "<group>";
+		};
+		8A6C5BD02597A38B00973BDE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BD22597A39A00973BDE /* ViewModels */,
+				8A6C5BD12597A39400973BDE /* ViewControllers */,
+				8A6C5BD92597A5A600973BDE /* Map.storyboard */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		8A6C5BD12597A39400973BDE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BD32597A4C700973BDE /* MapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A6C5BD22597A39A00973BDE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BD52597A4F500973BDE /* MapViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
@@ -268,6 +301,7 @@
 				8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */,
 				8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */,
 				8A6C5BA4259733B000973BDE /* Main.storyboard in Resources */,
+				8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +361,8 @@
 				8A6C5BA1259733B000973BDE /* ViewController.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
+				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
+				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
