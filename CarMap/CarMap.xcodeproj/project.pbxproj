@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5B9C259733B000973BDE /* AppDelegate.swift */; };
-		8A6C5BA1259733B000973BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA0259733B000973BDE /* ViewController.swift */; };
-		8A6C5BA4259733B000973BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA2259733B000973BDE /* Main.storyboard */; };
 		8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA5259733B200973BDE /* Assets.xcassets */; };
 		8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */; };
 		8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */; };
@@ -28,8 +26,6 @@
 		78E22A5FFDFDBCAE5C6E74F3 /* Pods-CarMap.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarMap.development.xcconfig"; path = "Target Support Files/Pods-CarMap/Pods-CarMap.development.xcconfig"; sourceTree = "<group>"; };
 		8A6C5B99259733B000973BDE /* CarMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6C5B9C259733B000973BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A6C5BA0259733B000973BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A6C5BA3259733B000973BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A6C5BA5259733B200973BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6C5BA8259733B200973BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6C5BAA259733B200973BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BD02597A38B00973BDE /* Map */,
-				8A6C5BA0259733B000973BDE /* ViewController.swift */,
-				8A6C5BA2259733B000973BDE /* Main.storyboard */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -300,7 +294,6 @@
 			files = (
 				8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */,
 				8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */,
-				8A6C5BA4259733B000973BDE /* Main.storyboard in Resources */,
 				8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +351,6 @@
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
 				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,
 				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
-				8A6C5BA1259733B000973BDE /* ViewController.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
@@ -369,14 +361,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A6C5BA2259733B000973BDE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A6C5BA3259733B000973BDE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
