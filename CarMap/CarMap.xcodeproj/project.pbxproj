@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		8A6C5BA4259733B000973BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA2259733B000973BDE /* Main.storyboard */; };
 		8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA5259733B200973BDE /* Assets.xcassets */; };
 		8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */; };
+		8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */; };
+		8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BBB25974B9600973BDE /* Colors.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		8A6C5BA5259733B200973BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6C5BA8259733B200973BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6C5BAA259733B200973BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		8A6C5BBB25974B9600973BDE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		8A6C5B9B259733B000973BDE /* CarMap */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C5BB525974B1600973BDE /* Infrastructure */,
 				8A6C5BB12597340D00973BDE /* App */,
 				8A6C5BA0259733B000973BDE /* ViewController.swift */,
 				8A6C5BA2259733B000973BDE /* Main.storyboard */,
@@ -94,12 +99,44 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
+		8A6C5BB525974B1600973BDE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BB625974B2300973BDE /* Presentation */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		8A6C5BB625974B2300973BDE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BB725974B3900973BDE /* Constants */,
+				8A6C5BB825974B3D00973BDE /* Extensions */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		8A6C5BB725974B3900973BDE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BBB25974B9600973BDE /* Colors.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		8A6C5BB825974B3D00973BDE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				78E22A5FFDFDBCAE5C6E74F3 /* Pods-CarMap.development.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -226,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,
+				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
 				8A6C5BA1259733B000973BDE /* ViewController.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 			);
