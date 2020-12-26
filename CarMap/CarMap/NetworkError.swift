@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct NetworkError {
+public struct NetworkError {
     
     var description: String!
     var errorCode: Int!
