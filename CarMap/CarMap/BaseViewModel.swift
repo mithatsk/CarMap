@@ -20,6 +20,7 @@ protocol BaseViewModelDelegate: class {
 
 public class BaseViewModel: NSObject {
     
+    let service: BaseService = inject()
     weak var delegate: BaseViewModelDelegate?
     
     var state: State! {

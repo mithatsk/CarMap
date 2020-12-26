@@ -10,7 +10,6 @@ import Foundation
 
 final class MapViewModel: BaseViewModel {
     
-    let service = BaseService()
     var cars: [CarModel] = []
     
     func load() {
