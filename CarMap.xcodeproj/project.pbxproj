@@ -38,6 +38,7 @@
 		8A6CC53825989CC200263BE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CC53725989CC200263BE8 /* Localizable.strings */; };
 		8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53B25989D8900263BE8 /* Localization.swift */; };
 		8A6CC53E25989D8F00263BE8 /* LocalizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */; };
+		8A6CC5402598B1DC00263BE8 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		8A6CC53725989CC200263BE8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8A6CC53B25989D8900263BE8 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationProtocol.swift; sourceTree = "<group>"; };
+		8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */,
 				8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */,
 				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
+				8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			files = (
 				8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */,
 				8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */,
+				8A6CC5402598B1DC00263BE8 /* BottomSheet.swift in Sources */,
 				8A6C5BF22597BF4100973BDE /* LoadingIndicatorView.swift in Sources */,
 				8A6CC53325988FFD00263BE8 /* DialogAlertView.swift in Sources */,
 				8A6C5BF92597C70600973BDE /* CarAnnotation.swift in Sources */,
