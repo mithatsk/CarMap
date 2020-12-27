@@ -18,6 +18,7 @@ It is always good to have reusable components especially for UI related elements
 
 1. LoadingIndicatorView for displaying custom loading indicator during network calls
 2. DialogAlertView for displaying user friendly alerts
+3. BottomSheet for displaying a scrollable view on the bottom of the screen which contains a UIView or UIViewController 
 
 
 ### Style Guide
