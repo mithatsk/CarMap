@@ -27,6 +27,14 @@ final class CarListViewController: BaseViewController<CarListViewModel> {
         tableView.delegate = self
     }
     
+    @IBAction private func sortButtonTapped(_ sender: UIButton) {
+        viewModel.isAscending = !viewModel.isAscending
+    }
+    
+    override func showState() {
+        tableView.reloadData()
+    }
+    
 }
 
 extension CarListViewController: UITableViewDataSource {

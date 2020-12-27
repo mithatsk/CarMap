@@ -214,8 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BBB25974B9600973BDE /* Colors.swift */,
-				8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */,
 				8A6CC55C2598E6D300263BE8 /* ImageNames.swift */,
+				8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */,
 				8A6CC55E2599079000263BE8 /* TableViewCellIdentifiers.swift */,
 			);
 			name = Constants;
@@ -224,9 +224,9 @@
 		8A6C5BB825974B3D00973BDE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */,
 				8A6C5BB925974B7500973BDE /* UIColorExtensions.swift */,
 				8A6C5BDB2597AA3000973BDE /* UIViewControllerExtensions.swift */,
-				8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -367,10 +367,10 @@
 			isa = PBXGroup;
 			children = (
 				8A6CC5462598CBDE00263BE8 /* BaseButton.swift */,
-				8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */,
 				8A6CC5602599162D00263BE8 /* BaseLabel.swift */,
-				8A6CC5622599164C00263BE8 /* PrimaryTitleLabel.swift */,
+				8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */,
 				8A6CC564259916AD00263BE8 /* PrimaryLabel.swift */,
+				8A6CC5622599164C00263BE8 /* PrimaryTitleLabel.swift */,
 				8A6CC56625991B5200263BE8 /* SecondaryLabel.swift */,
 			);
 			name = Controls;

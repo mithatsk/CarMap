@@ -12,4 +12,19 @@ final class CarListViewModel: BaseViewModel {
     
     var cars: [CarModel] = []
     
+    var isAscending: Bool = true {
+        didSet {
+            sortCarsByFuelLevel()
+        }
+    }
+    
+    func sortCarsByFuelLevel() {
+        if isAscending {
+            cars.sort { $0.fuelLevel < $1.fuelLevel }
+        } else {
+            cars.sort { $0.fuelLevel > $1.fuelLevel }
+        }
+        state = .show
+    }
+    
 }

@@ -18,8 +18,39 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9G-K7-Hn4">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGn-a2-QRx" customClass="BaseButton" customModule="CarMap" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="5" width="150" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="QRK-wZ-J68"/>
+                                            <constraint firstAttribute="width" constant="150" id="m41-Iy-76N"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="110" maxY="0.0"/>
+                                        <state key="normal" image="sort-icon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="carSections.sortTitle"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sortButtonTapped:" destination="SMI-ET-kY1" eventType="touchUpInside" id="vcx-nu-fCW"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pz3-Xt-YKf">
+                                        <rect key="frame" x="0.0" y="48" width="414" height="2"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.56470588239999997" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="sX6-T5-aXn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Pz3-Xt-YKf" secondAttribute="bottom" id="5Bb-et-XET"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pz3-Xt-YKf" secondAttribute="trailing" id="K2C-pf-zl7"/>
+                                    <constraint firstItem="KGn-a2-QRx" firstAttribute="leading" secondItem="d9G-K7-Hn4" secondAttribute="leading" constant="20" id="Ltd-kz-daF"/>
+                                    <constraint firstItem="Pz3-Xt-YKf" firstAttribute="leading" secondItem="d9G-K7-Hn4" secondAttribute="leading" id="WVo-qW-7wP"/>
+                                    <constraint firstItem="KGn-a2-QRx" firstAttribute="centerY" secondItem="d9G-K7-Hn4" secondAttribute="centerY" id="h9z-4c-lm5"/>
                                     <constraint firstAttribute="height" constant="50" id="sfU-Fh-5Qu"/>
                                 </constraints>
                             </view>
@@ -49,4 +80,7 @@
             <point key="canvasLocation" x="423" y="-212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sort-icon" width="100" height="100"/>
+    </resources>
 </document>
