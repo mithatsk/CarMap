@@ -16,12 +16,15 @@ final class CarAnnotationView: MKAnnotationView {
     
     private let triangleInset = CGFloat(10)
     private let contentInsets = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 5)
+    private let shadowOpacity = Float(0.4)
+    private let shadowRadius = CGFloat(2)
+    private let shadowOffset = CGSize(width: 0, height: 2)
     
     // MARK: - Properties
     
     private lazy var backgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = Colors.white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -89,7 +92,7 @@ final class CarAnnotationView: MKAnnotationView {
     private func drawTriangleAndRoundCorners(contentSize: CGSize) {
         let shape = CAShapeLayer()
         let path = CGMutablePath()
-
+        
         let pointShape = UIBezierPath()
         pointShape.move(to: CGPoint(x: (contentSize.width - triangleInset) / 2, y: contentSize.height - triangleInset/2))
         pointShape.addLine(to: CGPoint(x: (contentSize.width / 2), y: contentSize.height))
@@ -97,13 +100,23 @@ final class CarAnnotationView: MKAnnotationView {
         path.addPath(pointShape.cgPath)
 
         let box = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height - triangleInset/2)
-        let roundedRect = UIBezierPath(roundedRect: box,
+        let bezierPath = UIBezierPath(roundedRect: box,
                                        byRoundingCorners: [.topRight, .topLeft, .bottomLeft, .bottomRight],
-                                       cornerRadii: CGSize(width: 5, height: 5))
-        path.addPath(roundedRect.cgPath)
+            cornerRadii: CGSize(width: 5, height: 5)).cgPath
+        path.addPath(bezierPath)
+        
+        addShadow(path: bezierPath)
 
         shape.path = path
         backgroundView.layer.mask = shape
+    }
+    
+    private func addShadow(path: CGPath) {
+        layer.shadowPath = path
+        layer.shadowRadius = shadowRadius
+        layer.shadowOffset = shadowOffset
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowColor = UIColor.black.cgColor
     }
     
     private func setupViews() {
