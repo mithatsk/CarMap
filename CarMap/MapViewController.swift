@@ -24,6 +24,11 @@ final class MapViewController: BaseViewController<MapViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.register(CarAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(CarAnnotation.self))
+        addCarSectionsView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         viewModel.load()
     }
     
@@ -57,6 +62,15 @@ final class MapViewController: BaseViewController<MapViewModel> {
         
         let initialLocation = CLLocation(latitude: centerLatitute, longitude: centerLongitude)
         mapView.centerToLocation(initialLocation)
+    }
+    
+    private func addCarSectionsView() {
+        let view = CarSectionsView()
+        view.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: view.frameHeight))
+        let bottomSheet = BottomSheet(contentView: view)
+        bottomSheet.bottomBorderOffset = view.bottomOffset
+        bottomSheet.shouldDismissOnScroll = false
+        bottomSheet.present(in: self)
     }
     
 }

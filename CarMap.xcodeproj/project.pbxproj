@@ -39,6 +39,8 @@
 		8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53B25989D8900263BE8 /* Localization.swift */; };
 		8A6CC53E25989D8F00263BE8 /* LocalizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */; };
 		8A6CC5402598B1DC00263BE8 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */; };
+		8A6CC5422598C7E100263BE8 /* CarSectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5412598C7E100263BE8 /* CarSectionsView.swift */; };
+		8A6CC5442598C7EC00263BE8 /* CarSectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CC5432598C7EC00263BE8 /* CarSectionsView.xib */; };
 		8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5462598CBDE00263BE8 /* BaseButton.swift */; };
 		8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */; };
 		8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */; };
@@ -82,6 +84,8 @@
 		8A6CC53B25989D8900263BE8 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationProtocol.swift; sourceTree = "<group>"; };
 		8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		8A6CC5412598C7E100263BE8 /* CarSectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSectionsView.swift; sourceTree = "<group>"; };
+		8A6CC5432598C7EC00263BE8 /* CarSectionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarSectionsView.xib; sourceTree = "<group>"; };
 		8A6CC5462598CBDE00263BE8 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -170,9 +174,10 @@
 		8A6C5BB625974B2300973BDE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				8A6CC5342598902300263BE8 /* Protocols */,
 				8A6C5BB725974B3900973BDE /* Constants */,
+				8A6CC5452598CBCD00263BE8 /* Controls */,
 				8A6C5BB825974B3D00973BDE /* Extensions */,
+				8A6CC5342598902300263BE8 /* Protocols */,
 				8A6C5BBD25979D2F00973BDE /* ViewControllers */,
 				8A6C5BBE25979D3C00973BDE /* Views */,
 			);
@@ -209,10 +214,11 @@
 		8A6C5BBE25979D3C00973BDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */,
 				8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */,
 				8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */,
 				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
-				8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */,
+				8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,10 +262,10 @@
 		8A6C5BD02597A38B00973BDE /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				8A6C5BF52597C6AF00973BDE /* Views */,
 				8A6C5BE62597B0C200973BDE /* Models */,
-				8A6C5BD22597A39A00973BDE /* ViewModels */,
 				8A6C5BD12597A39400973BDE /* ViewControllers */,
+				8A6C5BD22597A39A00973BDE /* ViewModels */,
+				8A6C5BF52597C6AF00973BDE /* Views */,
 				8A6C5BD92597A5A600973BDE /* Map.storyboard */,
 			);
 			name = Map;
@@ -296,6 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */,
+				8A6CC5412598C7E100263BE8 /* CarSectionsView.swift */,
+				8A6CC5432598C7EC00263BE8 /* CarSectionsView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -410,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6CC5442598C7EC00263BE8 /* CarSectionsView.xib in Resources */,
 				8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */,
 				8A6CC53825989CC200263BE8 /* Localizable.strings in Resources */,
 				8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */,
@@ -496,6 +505,7 @@
 				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
 				8A6C5BFD2597CD9D00973BDE /* MKMapViewExtensions.swift in Sources */,
 				8A6C5BE12597ACD000973BDE /* BaseService.swift in Sources */,
+				8A6CC5422598C7E100263BE8 /* CarSectionsView.swift in Sources */,
 				8A6C5BEC2597B1AD00973BDE /* CarsTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

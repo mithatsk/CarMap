@@ -10,3 +10,7 @@
 "alert.title" = "Warning";
 "alert.primaryButtonTittle" = "OK";
 "alert.secondaryButtonTittle" = "Cancel";
+
+// Car Sections
+"carSections.cars" = "CARS";
+"carSections.buttonTitle" = "SHOW CARS";
