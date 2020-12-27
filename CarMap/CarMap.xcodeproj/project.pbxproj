@@ -35,6 +35,9 @@
 		8A6C5BFD2597CD9D00973BDE /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */; };
 		8A6CC53325988FFD00263BE8 /* DialogAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */; };
 		8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5352598903300263BE8 /* DialogAlertDelegate.swift */; };
+		8A6CC53825989CC200263BE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CC53725989CC200263BE8 /* Localizable.strings */; };
+		8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53B25989D8900263BE8 /* Localization.swift */; };
+		8A6CC53E25989D8F00263BE8 /* LocalizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +74,9 @@
 		8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
 		8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertView.swift; sourceTree = "<group>"; };
 		8A6CC5352598903300263BE8 /* DialogAlertDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertDelegate.swift; sourceTree = "<group>"; };
+		8A6CC53725989CC200263BE8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8A6CC53B25989D8900263BE8 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			children = (
 				8A6C5BA5259733B200973BDE /* Assets.xcassets */,
 				8A6C5BAA259733B200973BDE /* Info.plist */,
+				8A6CC53725989CC200263BE8 /* Localizable.strings */,
 				8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
@@ -145,6 +152,7 @@
 		8A6C5BB525974B1600973BDE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				8A6CC53925989D7300263BE8 /* DataAccess */,
 				8A6C5BC125979D5200973BDE /* Networking */,
 				8A6C5BB625974B2300973BDE /* Presentation */,
 			);
@@ -291,6 +299,23 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		8A6CC53925989D7300263BE8 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC53A25989D8200263BE8 /* Localization */,
+			);
+			name = DataAccess;
+			sourceTree = "<group>";
+		};
+		8A6CC53A25989D8200263BE8 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC53B25989D8900263BE8 /* Localization.swift */,
+				8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */,
+				8A6CC53825989CC200263BE8 /* Localizable.strings in Resources */,
 				8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */,
 				8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */,
 			);
@@ -428,6 +454,7 @@
 				8A6CC53325988FFD00263BE8 /* DialogAlertView.swift in Sources */,
 				8A6C5BF92597C70600973BDE /* CarAnnotation.swift in Sources */,
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
+				8A6CC53E25989D8F00263BE8 /* LocalizationProtocol.swift in Sources */,
 				8A6C5BE82597B0D200973BDE /* CarsRequestModel.swift in Sources */,
 				8A6C5BBA25974B7500973BDE /* UIColorExtensions.swift in Sources */,
 				8A6C5BE52597AD8100973BDE /* BaseTransaction.swift in Sources */,
@@ -440,6 +467,7 @@
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
 				8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */,
+				8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,

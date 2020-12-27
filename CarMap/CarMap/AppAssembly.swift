@@ -14,6 +14,7 @@ final class AppAssembly: Assembly {
     func assemble(container: Container) {
         container.register(LoadingIndicatorPresenter.self) { _ in LoadingIndicatorPresenter() }.inObjectScope(.container)
         container.register(BaseService.self) { _ in BaseService() }.inObjectScope(.container)
+        container.register(Localization.self) { _ in Localization() }.inObjectScope(.container)
     }
     
 }

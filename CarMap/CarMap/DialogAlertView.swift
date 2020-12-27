@@ -28,7 +28,7 @@ final class DialogAlertView: UIView {
         button.backgroundColor = Colors.orange
         button.addTarget(self, action: #selector(primaryButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Okay", for: .normal)
+        button.setTitle(NSLocalizedString("alert.primaryButtonTittle", comment: ""), for: .normal)
         return button
     }()
     
@@ -38,7 +38,7 @@ final class DialogAlertView: UIView {
         button.backgroundColor = Colors.lightGray
         button.addTarget(self, action: #selector(secondaryButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle(NSLocalizedString("Cancel", comment: ""), for: .normal)
+        button.setTitle(NSLocalizedString("alert.secondaryButtonTittle", comment: ""), for: .normal)
         button.setTitleColor(Colors.dark, for: .normal)
         return button
     }()

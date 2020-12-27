@@ -11,6 +11,7 @@ import UIKit
 public class BaseViewController<ViewModel: BaseViewModel>: UIViewController, BaseViewModelDelegate {
     
     var viewModel: ViewModel!
+    var localization: Localization = inject()
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -45,7 +46,7 @@ public class BaseViewController<ViewModel: BaseViewModel>: UIViewController, Bas
     
     func showError(_ error: NetworkError) {
         let alert = DialogAlertView(delegate: nil)
-        alert.show(titleText: "Warning", descriptionText: error.description)
+        alert.show(titleText: localization.string(for: "alert.title"), descriptionText: error.description)
     }
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
