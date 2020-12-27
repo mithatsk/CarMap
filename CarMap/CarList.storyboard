@@ -44,13 +44,29 @@
                                             <constraint firstAttribute="height" constant="2" id="sX6-T5-aXn"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB6-qN-v4S">
+                                        <rect key="frame" x="370" y="13" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="hdO-J9-SXW"/>
+                                            <constraint firstAttribute="width" constant="24" id="kac-fF-2DJ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="close-icon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="SMI-ET-kY1" eventType="touchUpInside" id="gum-PN-SIB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Pz3-Xt-YKf" secondAttribute="bottom" id="5Bb-et-XET"/>
                                     <constraint firstAttribute="trailing" secondItem="Pz3-Xt-YKf" secondAttribute="trailing" id="K2C-pf-zl7"/>
                                     <constraint firstItem="KGn-a2-QRx" firstAttribute="leading" secondItem="d9G-K7-Hn4" secondAttribute="leading" constant="20" id="Ltd-kz-daF"/>
+                                    <constraint firstAttribute="trailing" secondItem="qB6-qN-v4S" secondAttribute="trailing" constant="20" id="Nih-ZK-f81"/>
                                     <constraint firstItem="Pz3-Xt-YKf" firstAttribute="leading" secondItem="d9G-K7-Hn4" secondAttribute="leading" id="WVo-qW-7wP"/>
                                     <constraint firstItem="KGn-a2-QRx" firstAttribute="centerY" secondItem="d9G-K7-Hn4" secondAttribute="centerY" id="h9z-4c-lm5"/>
+                                    <constraint firstItem="qB6-qN-v4S" firstAttribute="centerY" secondItem="d9G-K7-Hn4" secondAttribute="centerY" id="ka4-rY-4uH"/>
                                     <constraint firstAttribute="height" constant="50" id="sfU-Fh-5Qu"/>
                                 </constraints>
                             </view>
@@ -81,6 +97,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close-icon" width="64" height="64"/>
         <image name="sort-icon" width="100" height="100"/>
     </resources>
 </document>

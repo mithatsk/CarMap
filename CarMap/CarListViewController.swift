@@ -10,15 +10,25 @@ import UIKit
 
 final class CarListViewController: BaseViewController<CarListViewModel> {
     
+    // MARK: - Constants
+    
+    private let rowHeight = CGFloat(110)
+    
+    // MARK: - UI Properties
+    
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             configureTableView()
         }
     }
     
+    // MARK: - Lifecycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - Custom Methods
     
     private func configureTableView() {
         let nib = UINib(nibName: TableViewCellIdentifiers.car.rawValue, bundle: Bundle.main)
@@ -29,6 +39,10 @@ final class CarListViewController: BaseViewController<CarListViewModel> {
     
     @IBAction private func sortButtonTapped(_ sender: UIButton) {
         viewModel.isAscending = !viewModel.isAscending
+    }
+    
+    @IBAction private func closeButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func showState() {
@@ -59,7 +73,7 @@ extension CarListViewController: UITableViewDataSource {
 extension CarListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return rowHeight
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
