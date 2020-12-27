@@ -34,10 +34,9 @@ final class CarAnnotationView: MKAnnotationView {
         return stackView
     }()
     
-    private var defaultCarImage = UIImage(named: "defaultCar")
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = defaultCarImage
+        imageView.image = UIImage(named: ImageNames.defaultCarImage.rawValue)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         return imageView
@@ -141,7 +140,7 @@ final class CarAnnotationView: MKAnnotationView {
     
     private func setDefaultCarImageIfImageIsNil() {
         if imageView.image == nil {
-            imageView.image = defaultCarImage
+            imageView.image = UIImage(named: ImageNames.defaultCarImage.rawValue)
         }
     }
     

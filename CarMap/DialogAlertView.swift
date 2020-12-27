@@ -60,7 +60,7 @@ final class DialogAlertView: UIView {
     
     private lazy var imageView: UIImageView! = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "warning-icon")
+        imageView.image = UIImage(named: ImageNames.warningIcon.rawValue)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
