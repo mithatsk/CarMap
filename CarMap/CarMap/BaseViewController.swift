@@ -44,7 +44,8 @@ public class BaseViewController<ViewModel: BaseViewModel>: UIViewController, Bas
     }
     
     func showError(_ error: NetworkError) {
-        // TODO: Alert will be displayed
+        let alert = DialogAlertView(delegate: nil)
+        alert.show(titleText: "Warning", descriptionText: error.description)
     }
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

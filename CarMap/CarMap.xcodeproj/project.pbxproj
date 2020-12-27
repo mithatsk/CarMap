@@ -33,6 +33,8 @@
 		8A6C5BF72597C6BF00973BDE /* CarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */; };
 		8A6C5BF92597C70600973BDE /* CarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BF82597C70600973BDE /* CarAnnotation.swift */; };
 		8A6C5BFD2597CD9D00973BDE /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */; };
+		8A6CC53325988FFD00263BE8 /* DialogAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */; };
+		8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5352598903300263BE8 /* DialogAlertDelegate.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotationView.swift; sourceTree = "<group>"; };
 		8A6C5BF82597C70600973BDE /* CarAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotation.swift; sourceTree = "<group>"; };
 		8A6C5BFC2597CD9D00973BDE /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
+		8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertView.swift; sourceTree = "<group>"; };
+		8A6CC5352598903300263BE8 /* DialogAlertDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogAlertDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 		8A6C5BB625974B2300973BDE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8A6CC5342598902300263BE8 /* Protocols */,
 				8A6C5BB725974B3900973BDE /* Constants */,
 				8A6C5BB825974B3D00973BDE /* Extensions */,
 				8A6C5BBD25979D2F00973BDE /* ViewControllers */,
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
+				8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */,
 				8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */,
 			);
 			name = Views;
@@ -275,6 +281,14 @@
 				8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		8A6CC5342598902300263BE8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC5352598903300263BE8 /* DialogAlertDelegate.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
@@ -411,6 +425,7 @@
 				8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */,
 				8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */,
 				8A6C5BF22597BF4100973BDE /* LoadingIndicatorView.swift in Sources */,
+				8A6CC53325988FFD00263BE8 /* DialogAlertView.swift in Sources */,
 				8A6C5BF92597C70600973BDE /* CarAnnotation.swift in Sources */,
 				8A6C5BC725979DC800973BDE /* NetworkError.swift in Sources */,
 				8A6C5BE82597B0D200973BDE /* CarsRequestModel.swift in Sources */,
@@ -424,6 +439,7 @@
 				8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */,
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
+				8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
