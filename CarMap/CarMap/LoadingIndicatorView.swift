@@ -28,7 +28,7 @@ final class LoadingIndicatorView: UIView {
     }
     
     private func initializeSpinner() {
-        addBezierPath(startAngle: 0, endAngle: (1.5 * .pi), color: Colors.yellow.cgColor)
+        addBezierPath(startAngle: 0, endAngle: (1.5 * .pi), color: Colors.orange.cgColor)
         addBezierPath(startAngle: (1.5 * .pi), endAngle: (2 * .pi), color: Colors.lightGray.cgColor)
     }
     
