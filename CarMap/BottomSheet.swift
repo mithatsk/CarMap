@@ -22,7 +22,7 @@ public class BottomSheet: UIView {
     public var shadowOpacity = Float(0.3)
     public var shadowOffset = CGSize(width: 0, height: -4)
     public var shadowColor = Colors.dark.cgColor
-    public var bottomBorderOffset = CGFloat(100)
+    public var bottomBorderOffset = CGFloat(0)
 
     // MARK: - Private Properties
 
@@ -36,6 +36,10 @@ public class BottomSheet: UIView {
 
     private var safeAreaTop: CGFloat {
         return UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
+    }
+    
+    private var safeAreaBottom: CGFloat {
+        return UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
     }
 
     private var screenWidth: CGFloat {
@@ -121,8 +125,8 @@ public class BottomSheet: UIView {
         if contentViewHeight >= screenHeight {
             contentViewHeight = screenHeight
         }
-        contentView.frame = CGRect(x: 0.0, y: 0, width: contentView.frame.width, height: contentViewHeight)
-        frame = CGRect(x: 0.0, y: screenHeight, width: screenWidth, height: contentView.frame.height)
+        contentView.frame = CGRect(x: 0, y: 0, width: contentView.frame.width, height: contentViewHeight + safeAreaBottom)
+        frame = CGRect(x: 0, y: screenHeight, width: screenWidth, height: contentView.frame.height)
         addSubview(contentView)
     }
 
