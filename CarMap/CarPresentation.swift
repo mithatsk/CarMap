@@ -25,7 +25,7 @@ struct CarPresentation {
         self.name = car.name
         self.imageURL = car.carImageUrl
         self.fuelType = car.fuelType
-        let fuelLevel = round(car.fuelLevel * 100) / 100
+        let fuelLevel = Int(round(car.fuelLevel * 100))
         self.fuelLevel = "%\(fuelLevel)"
     }
     
