@@ -201,9 +201,9 @@
 		8A6C5BBE25979D3C00973BDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
 				8A6CC53225988FFD00263BE8 /* DialogAlertView.swift */,
 				8A6C5BF32597BF6300973BDE /* LoadingIndicatorPresenter.swift */,
+				8A6C5BF12597BF4100973BDE /* LoadingIndicatorView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";

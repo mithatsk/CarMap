@@ -7,7 +7,7 @@ Separation of business logic and UI is quite handy and important for maintainabi
 
 ## Frameworks:
 
-I tried to keep external dependencies at minimum so these are following frameworks used in the project:
+I tried to keep external dependencies at minimum so I used the following frameworks:
 
 1. Alamofire for Networking
 2. Swinject for dependency injection
