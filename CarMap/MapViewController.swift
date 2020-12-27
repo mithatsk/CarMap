@@ -67,6 +67,7 @@ final class MapViewController: BaseViewController<MapViewModel> {
     private func addCarSectionsView() {
         let view = CarSectionsView()
         view.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: view.frameHeight))
+        view.delegate = self
         let bottomSheet = BottomSheet(contentView: view)
         bottomSheet.bottomBorderOffset = view.bottomOffset
         bottomSheet.shouldDismissOnScroll = false
@@ -95,3 +96,10 @@ extension MapViewController: MKMapViewDelegate {
     
 }
 
+extension MapViewController: CarSectionsViewDelegate {
+    
+    func displayCars() {
+        // TODO: Display Car list
+    }
+    
+}

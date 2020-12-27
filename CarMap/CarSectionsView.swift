@@ -8,13 +8,15 @@
 
 import UIKit
 
-final class CarSectionsView: NibLoadableView {
+final class CarSectionsView: NibLoadableView, CarSectionsViewProtocol {
+
+    weak var delegate: CarSectionsViewDelegate?
     
     public var frameHeight = CGFloat(122)
     public var bottomOffset = CGFloat(60)
     
     @IBAction private func showCarsButtonTapped(_ sender: UIButton) {
-        // TODO: Notify viewController via delegate
+        delegate?.displayCars()
     }
     
 }

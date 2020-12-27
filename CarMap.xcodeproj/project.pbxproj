@@ -44,6 +44,7 @@
 		8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5462598CBDE00263BE8 /* BaseButton.swift */; };
 		8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */; };
 		8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */; };
+		8A6CC54D2598DF4E00263BE8 /* CarSectionsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		8A6CC5462598CBDE00263BE8 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSectionsViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */,
+				8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */,
 				8A6CC5412598C7E100263BE8 /* CarSectionsView.swift */,
 				8A6CC5432598C7EC00263BE8 /* CarSectionsView.xib */,
 			);
@@ -475,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6CC54D2598DF4E00263BE8 /* CarSectionsViewProtocol.swift in Sources */,
 				8A6C5BC025979D4900973BDE /* BaseViewController.swift in Sources */,
 				8A6C5BF42597BF6300973BDE /* LoadingIndicatorPresenter.swift in Sources */,
 				8A6CC5402598B1DC00263BE8 /* BottomSheet.swift in Sources */,
