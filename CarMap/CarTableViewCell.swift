@@ -16,14 +16,13 @@ final class CarTableViewCell: UITableViewCell {
     @IBOutlet private weak var fuelLevelLabel: UILabel!
     @IBOutlet private weak var fuelTypeLabel: UILabel!
     
-    func configure(with car: CarModel) {
+    func configure(with car: CarPresentation) {
         selectionStyle = .none
-        let fuelLevel = String(car.fuelLevel * 100).prefix(2)
-        fuelLevelLabel.text = "%\(fuelLevel)"
+        fuelLevelLabel.text = car.fuelLevel
         fuelTypeLabel.text = car.fuelType
-        titleLabel.text = "\(car.make) - \(car.modelName)"
+        titleLabel.text = car.title
         nameLabel.text = car.name
-        if let url = URL(string: car.carImageUrl) {
+        if let url = URL(string: car.imageURL) {
             carImageView.kf.setImage(with: url)
         }
         setDefaultCarImageIfImageIsNil()

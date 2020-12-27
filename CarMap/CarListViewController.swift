@@ -37,8 +37,9 @@ extension CarListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifiers.car.rawValue, for: indexPath) as? CarTableViewCell {
-            let car = viewModel.cars[indexPath.row]
-            cell.configure(with: car)
+            let carModel = viewModel.cars[indexPath.row]
+            let carPresentation = CarPresentation(carModel)
+            cell.configure(with: carPresentation)
             return cell
         }
         
