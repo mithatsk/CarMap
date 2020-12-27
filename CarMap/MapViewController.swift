@@ -32,12 +32,6 @@ final class MapViewController: BaseViewController<MapViewModel> {
         viewModel.load()
     }
     
-    override func showState() {
-        setAnotations()
-        addAnnotationsToMap()
-        centerMapToAnnotations()
-    }
-    
     // MARK: - Custom Methods
     
     private func setAnotations() {
@@ -72,6 +66,12 @@ final class MapViewController: BaseViewController<MapViewModel> {
         bottomSheet.bottomBorderOffset = view.bottomOffset
         bottomSheet.shouldDismissOnScroll = false
         bottomSheet.present(in: self)
+    }
+    
+    override func showState() {
+        setAnotations()
+        addAnnotationsToMap()
+        centerMapToAnnotations()
     }
     
 }
