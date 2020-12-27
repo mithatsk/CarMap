@@ -107,96 +107,96 @@ final class DialogAlertView: UIView {
     }
     
     @objc private func primaryButtonTapped() {
-        self.dismiss() {
+        dismiss() {
             self.delegate?.primaryButtonTapped(dialog: self)
         }
     }
     
     @objc private func secondaryButtonTapped() {
-        self.dismiss() {
+        dismiss() {
             self.delegate?.secondaryButtonTapped(dialog: self)
         }
     }
     
     public func dismiss(completion: (()-> Void)? = nil) {
-        self.backgroundView.removeFromSuperview()
-        self.removeFromSuperview()
+        backgroundView.removeFromSuperview()
+        removeFromSuperview()
         completion?()
     }
     
     private func setupView() {
         addBackgroundView()
         addSubViewsToStackView()
-        self.dialogView.addSubview(self.stackView)
-        self.addSubview(self.dialogView)
+        dialogView.addSubview(stackView)
+        addSubview(dialogView)
         addConstraintsToStackViewElements()
         addConstraintsToStackView()
         addConstraintsToDialogView()
     }
     
     private func addSubViewsToStackView() {
-        self.stackView.addArrangedSubview(imageView)
-        self.stackView.addArrangedSubview(titleLabel)
-        self.stackView.addArrangedSubview(descriptionLabel)
-        self.stackView.addArrangedSubview(primaryButton)
-        self.stackView.addArrangedSubview(secondaryButton)
+        stackView.addArrangedSubview(imageView)
+        stackView.addArrangedSubview(titleLabel)
+        stackView.addArrangedSubview(descriptionLabel)
+        stackView.addArrangedSubview(primaryButton)
+        stackView.addArrangedSubview(secondaryButton)
     }
     
     private func addConstraintsToStackViewElements() {
-        self.imageView.heightAnchor.constraint(equalToConstant: self.imageViewWidthHeight).isActive = true
-        self.imageView.widthAnchor.constraint(equalToConstant: self.imageViewWidthHeight).isActive = true
-        self.primaryButton.heightAnchor.constraint(equalToConstant: self.buttonHeight).isActive = true
-        self.primaryButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-        self.secondaryButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-        self.secondaryButton.heightAnchor.constraint(equalToConstant: self.buttonHeight).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: imageViewWidthHeight).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: imageViewWidthHeight).isActive = true
+        primaryButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
+        primaryButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
+        secondaryButton.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
+        secondaryButton.heightAnchor.constraint(equalToConstant: buttonHeight).isActive = true
     }
     
     private func addConstraintsToStackView() {
-        self.stackView.leftAnchor.constraint(equalTo: self.dialogView.leftAnchor, constant: self.margin).isActive = true
-        self.stackView.bottomAnchor.constraint(equalTo: self.dialogView.bottomAnchor, constant: -self.margin).isActive = true
-        self.stackView.rightAnchor.constraint(equalTo: self.dialogView.rightAnchor, constant: -self.margin).isActive = true
-        self.stackView.topAnchor.constraint(equalTo: self.dialogView.topAnchor, constant: self.margin).isActive = true
+        stackView.leftAnchor.constraint(equalTo: dialogView.leftAnchor, constant: margin).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: dialogView.bottomAnchor, constant: -margin).isActive = true
+        stackView.rightAnchor.constraint(equalTo: dialogView.rightAnchor, constant: -margin).isActive = true
+        stackView.topAnchor.constraint(equalTo: dialogView.topAnchor, constant: margin).isActive = true
     }
     
     private func addConstraintsToDialogView() {
-        self.dialogView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: self.margin).isActive = true
-        self.dialogView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -self.margin).isActive = true
-        self.dialogView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        dialogView.leftAnchor.constraint(equalTo: leftAnchor, constant: margin).isActive = true
+        dialogView.rightAnchor.constraint(equalTo: rightAnchor, constant: -margin).isActive = true
+        dialogView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
     
     public func show(titleText: String, descriptionText: String, primaryButtonTitle: String? = nil, secondaryButtonTitle: String? = nil) {
-        self.titleLabel.text = titleText
-        self.descriptionLabel.text = descriptionText
+        titleLabel.text = titleText
+        descriptionLabel.text = descriptionText
         if let title = primaryButtonTitle {
-            self.primaryButton.setTitle(title, for: .normal)
+            primaryButton.setTitle(title, for: .normal)
         }
         
         if let title = secondaryButtonTitle {
-            self.secondaryButton.setTitle(title, for: .normal)
+            secondaryButton.setTitle(title, for: .normal)
         } else {
-            self.secondaryButton.isHidden = true
+            secondaryButton.isHidden = true
         }
         
         if let window = UIApplication.shared.keyWindow {
             window.addSubview(self)
-            self.addView(into: window)
+            addView(into: window)
         }
     }
     
     private func addBackgroundView() {
-        self.addSubview(self.backgroundView)
-        self.backgroundView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        self.backgroundView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        self.backgroundView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        self.backgroundView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        addSubview(backgroundView)
+        backgroundView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        backgroundView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        backgroundView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        backgroundView.topAnchor.constraint(equalTo: topAnchor).isActive = true
     }
     
     private func addView(into window: UIWindow) {
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.leftAnchor.constraint(equalTo: window.leftAnchor).isActive = true
-        self.rightAnchor.constraint(equalTo: window.rightAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: window.bottomAnchor).isActive = true
-        self.topAnchor.constraint(equalTo: window.topAnchor).isActive = true
+        translatesAutoresizingMaskIntoConstraints = false
+        leftAnchor.constraint(equalTo: window.leftAnchor).isActive = true
+        rightAnchor.constraint(equalTo: window.rightAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: window.bottomAnchor).isActive = true
+        topAnchor.constraint(equalTo: window.topAnchor).isActive = true
     }
     
 }
