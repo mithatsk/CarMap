@@ -39,6 +39,9 @@
 		8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53B25989D8900263BE8 /* Localization.swift */; };
 		8A6CC53E25989D8F00263BE8 /* LocalizationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */; };
 		8A6CC5402598B1DC00263BE8 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */; };
+		8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5462598CBDE00263BE8 /* BaseButton.swift */; };
+		8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */; };
+		8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		8A6CC53B25989D8900263BE8 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		8A6CC53D25989D8F00263BE8 /* LocalizationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationProtocol.swift; sourceTree = "<group>"; };
 		8A6CC53F2598B1DC00263BE8 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		8A6CC5462598CBDE00263BE8 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +325,15 @@
 			name = Localization;
 			sourceTree = "<group>";
 		};
+		8A6CC5452598CBCD00263BE8 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC5462598CBDE00263BE8 /* BaseButton.swift */,
+				8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,12 +482,15 @@
 				8A6C5BEE2597BCAE00973BDE /* AssemblerExtensions.swift in Sources */,
 				8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */,
 				8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */,
+				8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */,
+				8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */,
 				8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */,
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
 				8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */,
 				8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
+				8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
 				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
