@@ -131,16 +131,8 @@ final class CarAnnotationView: MKAnnotationView {
                 guard let self = self else { return }
                 if let image = image {
                     self.imageView.image = image
-                } else {
-                    self.setDefaultCarImageIfImageIsNil()
                 }
             }
-        }
-    }
-    
-    private func setDefaultCarImageIfImageIsNil() {
-        if imageView.image == nil {
-            imageView.image = UIImage(named: ImageNames.defaultCarImage.rawValue)
         }
     }
     
