@@ -14,3 +14,7 @@
 // Car Sections
 "carSections.cars" = "CARS";
 "carSections.buttonTitle" = "SHOW CARS";
+
+// Car Cell
+"carCell.fuelType" = "Fuel Type: ";
+"carCell.fuelLevel" = "Fuel Level: ";

@@ -45,7 +45,13 @@
 		8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */; };
 		8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */; };
 		8A6CC54D2598DF4E00263BE8 /* CarSectionsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */; };
+		8A6CC5532598E0A800263BE8 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5522598E0A800263BE8 /* CarListViewModel.swift */; };
+		8A6CC5552598E0BE00263BE8 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5542598E0BE00263BE8 /* CarListViewController.swift */; };
+		8A6CC5572598E10500263BE8 /* CarList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CC5562598E10500263BE8 /* CarList.storyboard */; };
+		8A6CC55A2598E1AA00263BE8 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5582598E1AA00263BE8 /* CarTableViewCell.swift */; };
+		8A6CC55B2598E1AA00263BE8 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A6CC5592598E1AA00263BE8 /* CarTableViewCell.xib */; };
 		8A6CC55D2598E6D300263BE8 /* ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC55C2598E6D300263BE8 /* ImageNames.swift */; };
+		8A6CC55F2599079000263BE8 /* TableViewCellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC55E2599079000263BE8 /* TableViewCellIdentifiers.swift */; };
 		8A6CC5612599162D00263BE8 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5602599162D00263BE8 /* BaseLabel.swift */; };
 		8A6CC5632599164C00263BE8 /* PrimaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC5622599164C00263BE8 /* PrimaryTitleLabel.swift */; };
 		8A6CC565259916AD00263BE8 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC564259916AD00263BE8 /* PrimaryLabel.swift */; };
@@ -96,7 +102,13 @@
 		8A6CC5482598CC2C00263BE8 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		8A6CC54A2598CE2F00263BE8 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSectionsViewProtocol.swift; sourceTree = "<group>"; };
+		8A6CC5522598E0A800263BE8 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		8A6CC5542598E0BE00263BE8 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		8A6CC5562598E10500263BE8 /* CarList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarList.storyboard; sourceTree = "<group>"; };
+		8A6CC5582598E1AA00263BE8 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		8A6CC5592598E1AA00263BE8 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		8A6CC55C2598E6D300263BE8 /* ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNames.swift; sourceTree = "<group>"; };
+		8A6CC55E2599079000263BE8 /* TableViewCellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellIdentifiers.swift; sourceTree = "<group>"; };
 		8A6CC5602599162D00263BE8 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		8A6CC5622599164C00263BE8 /* PrimaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTitleLabel.swift; sourceTree = "<group>"; };
 		8A6CC564259916AD00263BE8 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
@@ -202,6 +214,7 @@
 				8A6C5BBB25974B9600973BDE /* Colors.swift */,
 				8A6C5BDD2597AA7D00973BDE /* StoryboardNames.swift */,
 				8A6CC55C2598E6D300263BE8 /* ImageNames.swift */,
+				8A6CC55E2599079000263BE8 /* TableViewCellIdentifiers.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -267,6 +280,7 @@
 		8A6C5BC825979E1800973BDE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8A6CC54E2598E07A00263BE8 /* CarList */,
 				8A6C5BD02597A38B00973BDE /* Map */,
 			);
 			name = Screens;
@@ -360,6 +374,42 @@
 			name = Controls;
 			sourceTree = "<group>";
 		};
+		8A6CC54E2598E07A00263BE8 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC54F2598E08600263BE8 /* ViewControllers */,
+				8A6CC5512598E08F00263BE8 /* ViewModels */,
+				8A6CC5502598E08C00263BE8 /* Views */,
+				8A6CC5562598E10500263BE8 /* CarList.storyboard */,
+			);
+			name = CarList;
+			sourceTree = "<group>";
+		};
+		8A6CC54F2598E08600263BE8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC5542598E0BE00263BE8 /* CarListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A6CC5502598E08C00263BE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC5582598E1AA00263BE8 /* CarTableViewCell.swift */,
+				8A6CC5592598E1AA00263BE8 /* CarTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8A6CC5512598E08F00263BE8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8A6CC5522598E0A800263BE8 /* CarListViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,10 +487,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A6CC5442598C7EC00263BE8 /* CarSectionsView.xib in Resources */,
+				8A6CC55B2598E1AA00263BE8 /* CarTableViewCell.xib in Resources */,
 				8A6C5BA9259733B200973BDE /* LaunchScreen.storyboard in Resources */,
 				8A6CC53825989CC200263BE8 /* Localizable.strings in Resources */,
 				8A6C5BA6259733B200973BDE /* Assets.xcassets in Resources */,
 				8A6C5BDA2597A5A600973BDE /* Map.storyboard in Resources */,
+				8A6CC5572598E10500263BE8 /* CarList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,23 +563,27 @@
 				8A6C5BE52597AD8100973BDE /* BaseTransaction.swift in Sources */,
 				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
 				8A6C5BF72597C6BF00973BDE /* CarAnnotationView.swift in Sources */,
+				8A6CC55A2598E1AA00263BE8 /* CarTableViewCell.swift in Sources */,
 				8A6C5BEE2597BCAE00973BDE /* AssemblerExtensions.swift in Sources */,
 				8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */,
 				8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */,
 				8A6CC5492598CC2C00263BE8 /* PrimaryButton.swift in Sources */,
 				8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */,
 				8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */,
+				8A6CC55F2599079000263BE8 /* TableViewCellIdentifiers.swift in Sources */,
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6CC56725991B5200263BE8 /* SecondaryLabel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
 				8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */,
 				8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
+				8A6CC5532598E0A800263BE8 /* CarListViewModel.swift in Sources */,
 				8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
 				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
 				8A6C5BFD2597CD9D00973BDE /* MKMapViewExtensions.swift in Sources */,
+				8A6CC5552598E0BE00263BE8 /* CarListViewController.swift in Sources */,
 				8A6C5BE12597ACD000973BDE /* BaseService.swift in Sources */,
 				8A6CC5422598C7E100263BE8 /* CarSectionsView.swift in Sources */,
 				8A6C5BEC2597B1AD00973BDE /* CarsTransaction.swift in Sources */,
