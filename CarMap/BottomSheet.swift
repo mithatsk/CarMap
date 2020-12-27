@@ -35,7 +35,7 @@ public class BottomSheet: UIView {
     }
 
     private var safeAreaTop: CGFloat {
-        return UIApplication.shared.windows.first?.safeAreaInsets.top ?? 00
+        return UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
     }
 
     private var screenWidth: CGFloat {
