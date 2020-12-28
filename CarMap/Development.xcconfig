@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  CarMap
+//
+//  Created by mithat samet kaskara on 29.12.2020.
+//  Copyright © 2020 Mithat Kaskara. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-CarMap/Pods-CarMap.development.xcconfig"
+
+APP_PRODUCT_NAME = Car Map
+APP_PRODUCT_BUNDLE_IDENTIFIER = com.mithatkaskara.CarMap
+APP_API_URL = https:/$()/cdn.sixt.io/
