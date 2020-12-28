@@ -147,7 +147,7 @@ final class CarAnnotationView: MKAnnotationView {
     
     private func setImage(string: String?) {
         if let imageURLString = string, let imageURL = URL(string: imageURLString) {
-            imageView.kf.setImage(with: imageURL) { result in
+            imageView.kf.setImage(with: imageURL, completionHandler: { result in
                 switch result {
                 case .success(let value):
                     self.imageView.image = value.image
@@ -155,7 +155,7 @@ final class CarAnnotationView: MKAnnotationView {
                     self.imageView.image = UIImage(named: ImageNames.defaultCarImage.rawValue)
                     print("\(error.localizedDescription)")
                 }
-            }
+            })
         }
     }
     
