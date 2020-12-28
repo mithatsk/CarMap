@@ -11,6 +11,10 @@ import MapKit
 
 final class MapViewController: BaseViewController<MapViewModel> {
     
+    // MARK: - Constants
+    
+    private let scaleRatio = CGFloat(1.5)
+    
     // MARK: - IBOutlet Properties
     
     @IBOutlet private weak var mapView: MKMapView! {
@@ -92,6 +96,14 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        view.transform = CGAffineTransform.init(scaleX: scaleRatio, y: scaleRatio)
+    }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        view.transform = CGAffineTransform.identity
     }
     
 }
