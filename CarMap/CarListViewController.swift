@@ -16,7 +16,7 @@ final class CarListViewController: BaseViewController<CarListViewModel> {
     
     // MARK: - UI Properties
     
-    @IBOutlet private weak var tableView: UITableView! {
+    @IBOutlet weak var tableView: UITableView! {
         didSet {
             configureTableView()
         }
