@@ -30,8 +30,8 @@ public class BaseButton: UIButton {
     }
     
     public func commonInitialize() {
-        self.layer.cornerRadius = 10
-        self.layer.masksToBounds = true
+        layer.cornerRadius = 10
+        layer.masksToBounds = true
     }
     
 }

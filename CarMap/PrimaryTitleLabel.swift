@@ -12,8 +12,8 @@ final class PrimaryTitleLabel: BaseLabel {
 
     override func commonInitialize() {
         super.commonInitialize()
-        self.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        self.textColor = Colors.orange
+        font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        textColor = Colors.orange
     }
 
 }

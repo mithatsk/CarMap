@@ -13,8 +13,8 @@ final class PrimaryButton: BaseButton {
     
     override public func commonInitialize() {
         super.commonInitialize()
-        self.backgroundColor = Colors.orange
-        self.setTitleColor(Colors.white, for: .normal)
-        self.titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
+        backgroundColor = Colors.orange
+        setTitleColor(Colors.white, for: .normal)
+        titleLabel?.font = .systemFont(ofSize: 17, weight: .bold)
     }
 }

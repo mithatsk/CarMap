@@ -12,8 +12,8 @@ final class SecondaryLabel: BaseLabel {
 
     override func commonInitialize() {
         super.commonInitialize()
-        self.font = UIFont.systemFont(ofSize: 13, weight: .medium)
-        self.textColor = Colors.dark
+        font = UIFont.systemFont(ofSize: 13, weight: .medium)
+        textColor = Colors.dark
     }
 
 }

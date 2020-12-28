@@ -12,8 +12,8 @@ final class PrimaryLabel: BaseLabel {
 
     override func commonInitialize() {
         super.commonInitialize()
-        self.font = UIFont.systemFont(ofSize: 15, weight: .medium)
-        self.textColor = Colors.darkBlack
+        font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        textColor = Colors.darkBlack
     }
 
 }
