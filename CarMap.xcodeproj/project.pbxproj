@@ -60,6 +60,7 @@
 		8A78C4C3259A2D24001CF807 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */; };
 		8A78C4C5259A2F8C001CF807 /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */; };
 		8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4CC259A357E001CF807 /* CarMapTests.swift */; };
+		8A78C518259A4724001CF807 /* cars_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A78C4D5259A3798001CF807 /* cars_stub.json */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +134,7 @@
 		8A78C4CA259A357E001CF807 /* CarMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A78C4CC259A357E001CF807 /* CarMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapTests.swift; sourceTree = "<group>"; };
 		8A78C4CE259A357E001CF807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A78C4D5259A3798001CF807 /* cars_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cars_stub.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,9 +455,18 @@
 		8A78C4CB259A357E001CF807 /* CarMapTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A78C4D3259A35FF001CF807 /* Stubs */,
 				8A78C4CE259A357E001CF807 /* Info.plist */,
 			);
 			path = CarMapTests;
+			sourceTree = "<group>";
+		};
+		8A78C4D3259A35FF001CF807 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				8A78C4D5259A3798001CF807 /* cars_stub.json */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
