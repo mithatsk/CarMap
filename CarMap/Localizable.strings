@@ -13,7 +13,8 @@
 
 // Car Sections
 "carSections.cars" = "CARS";
-"carSections.buttonTitle" = "SHOW CARS";
+"carSections.buttonTitle" = "SHOW ALL CARS";
+"carSections.selectCar" = "Select a car on the map";
 
 // Car Cell
 "carCell.fuelType" = "Fuel Type: ";

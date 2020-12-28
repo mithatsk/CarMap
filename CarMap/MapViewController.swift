@@ -15,8 +15,9 @@ final class MapViewController: BaseViewController<MapViewModel> {
     
     private let scaleRatio = CGFloat(1.5)
     
-    // MARK: - IBOutlet Properties
+    // MARK: - UI Properties
     
+    private var carSectionsView: CarSectionsView?
     @IBOutlet private weak var mapView: MKMapView! {
         didSet {
             mapView.delegate = self
@@ -63,11 +64,12 @@ final class MapViewController: BaseViewController<MapViewModel> {
     }
     
     private func addCarSectionsView() {
-        let view = CarSectionsView()
-        view.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: view.frameHeight))
-        view.delegate = self
-        let bottomSheet = BottomSheet(contentView: view)
-        bottomSheet.bottomBorderOffset = view.bottomOffset
+        carSectionsView = CarSectionsView()
+        guard let carSectionsView = carSectionsView else { return }
+        carSectionsView.frame = CGRect(origin: .zero, size: CGSize(width: UIScreen.main.bounds.width, height: carSectionsView.frameHeight))
+        carSectionsView.delegate = self
+        let bottomSheet = BottomSheet(contentView: carSectionsView)
+        bottomSheet.bottomBorderOffset = carSectionsView.bottomOffset
         bottomSheet.shouldDismissOnScroll = false
         bottomSheet.present(in: self)
     }
@@ -100,6 +102,10 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         view.transform = CGAffineTransform.init(scaleX: scaleRatio, y: scaleRatio)
+        if let annotationView = view as? CarAnnotationView, let carModel = viewModel.getCar(with: annotationView.id) {
+            let carPresentation = CarPresentation(carModel)
+            carSectionsView?.updateView(with: carPresentation)
+        }
     }
     
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {

@@ -10,6 +10,7 @@ import Foundation
 
 protocol CarSectionsViewProtocol {
     var delegate: CarSectionsViewDelegate? { get set }
+    func updateView(with car: CarPresentation)
 }
 
 protocol CarSectionsViewDelegate: class {
