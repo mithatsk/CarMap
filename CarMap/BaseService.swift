@@ -12,14 +12,13 @@ import Alamofire
 public class BaseService: NSObject, BaseServiceProtocol {
     
     let indicatorPresenter: LoadingIndicatorPresenter = inject()
-    private let serviceURL = "https://cdn.sixt.io/"
     
     public func fetch<Transaction, RequestModel, ResponseModel>(_ transaction: Transaction, requestModel: RequestModel,
                                                          completion: ((ResponseModel?, NetworkError?) -> Void)?) where Transaction: BaseTransaction<RequestModel, ResponseModel> {
         // Display Loading Indicator
         self.indicatorPresenter.show()
         
-        var serviceUrl = self.serviceURL
+        guard var serviceUrl = ConfigurationHelper.shared.infoForKey(ConfigurationKeys.apiURL) else { return }
         
         // Configure service url
         serviceUrl.append(transaction.path)

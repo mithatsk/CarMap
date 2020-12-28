@@ -65,6 +65,7 @@
 		8A78C518259A4724001CF807 /* cars_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A78C4D5259A3798001CF807 /* cars_stub.json */; };
 		8A78C51A259A6475001CF807 /* CarListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */; };
 		8A78C521259A9209001CF807 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C520259A9209001CF807 /* ConfigurationHelper.swift */; };
+		8A78C524259A92B5001CF807 /* ConfigurationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C523259A92B5001CF807 /* ConfigurationKeys.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewControllerTests.swift; sourceTree = "<group>"; };
 		8A78C51E259A8D75001CF807 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		8A78C520259A9209001CF807 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
+		8A78C523259A92B5001CF807 /* ConfigurationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +392,7 @@
 		8A6CC53925989D7300263BE8 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				8A78C522259A92A8001CF807 /* Constants */,
 				8A78C51F259A91FB001CF807 /* Configuration */,
 				8A6CC53A25989D8200263BE8 /* Localization */,
 			);
@@ -514,6 +517,14 @@
 				8A78C520259A9209001CF807 /* ConfigurationHelper.swift */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8A78C522259A92A8001CF807 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8A78C523259A92B5001CF807 /* ConfigurationKeys.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
@@ -710,6 +721,7 @@
 				8A6CC5472598CBDE00263BE8 /* BaseButton.swift in Sources */,
 				8A6C5BF02597BCD000973BDE /* AppAssembly.swift in Sources */,
 				8A6CC55F2599079000263BE8 /* TableViewCellIdentifiers.swift in Sources */,
+				8A78C524259A92B5001CF807 /* ConfigurationKeys.swift in Sources */,
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6CC56725991B5200263BE8 /* SecondaryLabel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
