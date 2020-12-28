@@ -24,6 +24,9 @@ It is always good to have reusable components especially for UI related elements
 ### Style Guide
 [Raywenderlich style guide](https://github.com/raywenderlich/swift-style-guide) is a good one for having a code standard so I followed this guideline.  
 
+### Test Automation
+I wrote unit tests for validating the business logic. [Apple Unit test guide](https://developer.apple.com/documentation/xcode/adding_unit_tests_to_your_existing_project) is quite useful for getting started  
+
 #### Helpful Resources
 
 [MapKit](https://developer.apple.com/documentation/mapkit)
