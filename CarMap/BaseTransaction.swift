@@ -16,5 +16,9 @@ public class BaseTransaction<Request, Response> where Request: Encodable, Respon
     
     open var endpoint: String?
     
+    open var method: HTTPMethodType {
+        return HTTPMethodType(type: .get)
+    }
+    
     public required init() { }
 }

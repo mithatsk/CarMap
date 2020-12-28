@@ -40,7 +40,7 @@ public class BaseService: NSObject, BaseServiceProtocol {
         
         // Make service request
         Alamofire.request(serviceUrl,
-                          method: .get,
+                          method: transaction.method.type,
                           parameters: encodedJsonDictionary,
                           headers: headers).responseData { (response) in
                             // Hide Loading Indicator
