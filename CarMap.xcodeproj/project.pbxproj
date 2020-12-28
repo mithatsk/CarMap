@@ -60,6 +60,7 @@
 		8A78C4C3259A2D24001CF807 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */; };
 		8A78C4C5259A2F8C001CF807 /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */; };
 		8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4CC259A357E001CF807 /* CarMapTests.swift */; };
+		8A78C4D8259A3814001CF807 /* MapDataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4D7259A3814001CF807 /* MapDataProviderMock.swift */; };
 		8A78C517259A459C001CF807 /* Bundle+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C516259A459C001CF807 /* Bundle+Test.swift */; };
 		8A78C518259A4724001CF807 /* cars_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A78C4D5259A3798001CF807 /* cars_stub.json */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
@@ -136,6 +137,7 @@
 		8A78C4CC259A357E001CF807 /* CarMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapTests.swift; sourceTree = "<group>"; };
 		8A78C4CE259A357E001CF807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A78C4D5259A3798001CF807 /* cars_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cars_stub.json; sourceTree = "<group>"; };
+		8A78C4D7259A3814001CF807 /* MapDataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProviderMock.swift; sourceTree = "<group>"; };
 		8A78C516259A459C001CF807 /* Bundle+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -458,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				8A78C515259A4592001CF807 /* Extensions */,
+				8A78C4D6259A37C2001CF807 /* Mocks */,
 				8A78C4D3259A35FF001CF807 /* Stubs */,
 				8A78C4CC259A357E001CF807 /* CarMapTests.swift */,
 				8A78C4CE259A357E001CF807 /* Info.plist */,
@@ -471,6 +474,14 @@
 				8A78C4D5259A3798001CF807 /* cars_stub.json */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		8A78C4D6259A37C2001CF807 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8A78C4D7259A3814001CF807 /* MapDataProviderMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		8A78C515259A4592001CF807 /* Extensions */ = {
@@ -700,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */,
+				8A78C4D8259A3814001CF807 /* MapDataProviderMock.swift in Sources */,
 				8A78C517259A459C001CF807 /* Bundle+Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
