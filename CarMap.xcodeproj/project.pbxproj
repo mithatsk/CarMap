@@ -475,8 +475,8 @@
 				8A78C515259A4592001CF807 /* Extensions */,
 				8A78C4D6259A37C2001CF807 /* Mocks */,
 				8A78C4D3259A35FF001CF807 /* Stubs */,
-				8A78C4CC259A357E001CF807 /* CarMapTests.swift */,
 				8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */,
+				8A78C4CC259A357E001CF807 /* CarMapTests.swift */,
 				8A78C4CE259A357E001CF807 /* Info.plist */,
 			);
 			path = CarMapTests;
