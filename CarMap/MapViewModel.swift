@@ -13,10 +13,10 @@ final class MapViewModel: BaseViewModel {
     var cars: [CarModel] = []
     var annotations: [CarAnnotation] = []
     
+    var dataProvider: MapDataProviderProtocol = MapDataProvider()
+    
     func load() {
-        let request = CarsRequestModel()
-        let transaction = CarsTransaction()
-        service.fetch(transaction, requestModel: request) { [weak self] (response, error) in
+        dataProvider.fetchCars { [weak self] (response, error) in
             guard let self = self else { return }
             if let error = error {
                 print(error.description!)

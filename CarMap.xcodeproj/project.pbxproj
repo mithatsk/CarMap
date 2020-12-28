@@ -57,6 +57,8 @@
 		8A6CC565259916AD00263BE8 /* PrimaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC564259916AD00263BE8 /* PrimaryLabel.swift */; };
 		8A6CC56725991B5200263BE8 /* SecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC56625991B5200263BE8 /* SecondaryLabel.swift */; };
 		8A6CC56A259923D200263BE8 /* CarPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC569259923D200263BE8 /* CarPresentation.swift */; };
+		8A78C4C3259A2D24001CF807 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */; };
+		8A78C4C5259A2F8C001CF807 /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,8 @@
 		8A6CC564259916AD00263BE8 /* PrimaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryLabel.swift; sourceTree = "<group>"; };
 		8A6CC56625991B5200263BE8 /* SecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryLabel.swift; sourceTree = "<group>"; };
 		8A6CC569259923D200263BE8 /* CarPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPresentation.swift; sourceTree = "<group>"; };
+		8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
+		8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 				8A6C5BC225979D6600973BDE /* ViewModels */,
 				8A6C5BE02597ACD000973BDE /* BaseService.swift */,
 				8A6C5BE22597ACEB00973BDE /* BaseServiceProtocol.swift */,
+				8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BD52597A4F500973BDE /* MapViewModel.swift */,
+				8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -586,11 +592,13 @@
 				8A6C5BEA2597B0DA00973BDE /* CarModel.swift in Sources */,
 				8A6CC56725991B5200263BE8 /* SecondaryLabel.swift in Sources */,
 				8A6C5BE32597ACEB00973BDE /* BaseServiceProtocol.swift in Sources */,
+				8A78C4C5259A2F8C001CF807 /* BaseDataProvider.swift in Sources */,
 				8A6CC5362598903300263BE8 /* DialogAlertDelegate.swift in Sources */,
 				8A6CC53C25989D8900263BE8 /* Localization.swift in Sources */,
 				8A6C5B9D259733B000973BDE /* AppDelegate.swift in Sources */,
 				8A6CC5532598E0A800263BE8 /* CarListViewModel.swift in Sources */,
 				8A6CC54B2598CE2F00263BE8 /* NibLoadableView.swift in Sources */,
+				8A78C4C3259A2D24001CF807 /* MapDataProvider.swift in Sources */,
 				8A6C5BC525979DAB00973BDE /* BaseViewModel.swift in Sources */,
 				8A6C5BD42597A4C700973BDE /* MapViewController.swift in Sources */,
 				8A6C5BD62597A4F500973BDE /* MapViewModel.swift in Sources */,
