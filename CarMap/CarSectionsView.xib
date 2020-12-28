@@ -84,6 +84,9 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="CarTitleLabel"/>
+                                                            </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="39C-FP-aPM">
                                                             <rect key="frame" x="0.0" y="29" width="224" height="20.333333333333329"/>
@@ -99,6 +102,9 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="CarFuelLevelLabel"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
@@ -116,6 +122,9 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="CarFuelLevelLabel"/>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
@@ -165,6 +174,7 @@
                                     <state key="normal" title="Button"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="carSections.buttonTitle"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="showAllButton"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="showCarsButtonTapped:" destination="-1" eventType="touchUpInside" id="Vpx-tP-koE"/>

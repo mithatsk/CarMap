@@ -32,6 +32,7 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="carList.sortTitle"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="sortButton"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sortButtonTapped:" destination="SMI-ET-kY1" eventType="touchUpInside" id="vcx-nu-fCW"/>
@@ -44,7 +45,7 @@
                                             <constraint firstAttribute="height" constant="2" id="sX6-T5-aXn"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB6-qN-v4S">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB6-qN-v4S" customClass="BaseButton" customModule="CarMap" customModuleProvider="target">
                                         <rect key="frame" x="370" y="13" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="hdO-J9-SXW"/>
@@ -54,6 +55,9 @@
                                         <state key="normal" image="close-icon">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="acessibilityIdentifierKey" value="closeButton"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="closeButtonTapped:" destination="SMI-ET-kY1" eventType="touchUpInside" id="gum-PN-SIB"/>
                                         </connections>

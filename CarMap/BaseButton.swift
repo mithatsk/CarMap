@@ -19,6 +19,12 @@ public class BaseButton: UIButton {
         }
     }
     
+    @IBInspectable var acessibilityIdentifierKey: String? {
+        didSet {
+            accessibilityIdentifier = acessibilityIdentifierKey
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInitialize()

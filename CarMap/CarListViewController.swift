@@ -64,6 +64,7 @@ extension CarListViewController: UITableViewDataSource {
             let carModel = viewModel.cars[indexPath.row]
             let carPresentation = CarPresentation(carModel)
             cell.configure(with: carPresentation)
+            cell.accessibilityIdentifier = "CarTableViewCell-\(indexPath.row)"
             return cell
         }
         

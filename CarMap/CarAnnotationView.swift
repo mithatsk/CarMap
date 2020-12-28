@@ -140,6 +140,7 @@ final class CarAnnotationView: MKAnnotationView {
     private func configureViews() {
         if let annotation  = self.annotation as? CarAnnotation {
             id = annotation.id
+            accessibilityIdentifier = "CarAnnotation-\(annotation.id)"
             setImage(string: annotation.imageURL)
         }
     }
