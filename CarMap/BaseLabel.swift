@@ -36,9 +36,9 @@ public class BaseLabel: UILabel {
     }
 
     func commonInitialize() {
-        self.font = .systemFont(ofSize: 17, weight: .medium)
-        self.textAlignment = .left
-        self.numberOfLines = 0
+        font = .systemFont(ofSize: 17, weight: .medium)
+        textAlignment = .left
+        numberOfLines = 0
     }
     
 }
