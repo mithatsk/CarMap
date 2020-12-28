@@ -31,7 +31,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="carSections.sortTitle"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="carList.sortTitle"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="sortButtonTapped:" destination="SMI-ET-kY1" eventType="touchUpInside" id="vcx-nu-fCW"/>

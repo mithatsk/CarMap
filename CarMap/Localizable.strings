@@ -14,8 +14,11 @@
 // Car Sections
 "carSections.cars" = "CARS";
 "carSections.buttonTitle" = "SHOW CARS";
-"carSections.sortTitle" = "SORT BY FUEL";
 
 // Car Cell
 "carCell.fuelType" = "Fuel Type: ";
 "carCell.fuelLevel" = "Fuel Level: ";
+
+// Car List
+
+"carList.sortTitle" = "SORT BY FUEL";
