@@ -52,6 +52,8 @@ final class CarAnnotationView: MKAnnotationView {
         return size
     }
     
+    var id: String!
+    
     // MARK: - Override Methods
     
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
@@ -70,7 +72,7 @@ final class CarAnnotationView: MKAnnotationView {
     
     override func prepareForDisplay() {
         super.prepareForDisplay()
-        setImage()
+        configureViews()
         setNeedsDisplay()
     }
     
@@ -135,16 +137,21 @@ final class CarAnnotationView: MKAnnotationView {
         imageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
     
-    private func setImage() {
-        if let annotation  = self.annotation as? CarAnnotation,
-            let imageString = annotation.imageURL,
-            let imageURL = URL(string: imageString) {
-            
+    private func configureViews() {
+        if let annotation  = self.annotation as? CarAnnotation {
+            id = annotation.id
+            setImage(string: annotation.imageURL)
+        }
+    }
+    
+    private func setImage(string: String?) {
+        if let imageURLString = string, let imageURL = URL(string: imageURLString) {
             imageView.kf.setImage(with: imageURL) { result in
                 switch result {
                 case .success(let value):
                     self.imageView.image = value.image
                 case .failure(let error):
+                    self.imageView.image = UIImage(named: ImageNames.defaultCarImage.rawValue)
                     print("\(error.localizedDescription)")
                 }
             }
