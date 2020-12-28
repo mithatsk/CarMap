@@ -140,10 +140,12 @@ final class CarAnnotationView: MKAnnotationView {
             let imageString = annotation.imageURL,
             let imageURL = URL(string: imageString) {
             
-            KingfisherManager.shared.retrieveImage(with: imageURL, options: nil, progressBlock: nil) { [weak self] (image, error, cacheType, imageURL) in
-                guard let self = self else { return }
-                if let image = image {
-                    self.imageView.image = image
+            imageView.kf.setImage(with: imageURL) { result in
+                switch result {
+                case .success(let value):
+                    self.imageView.image = value.image
+                case .failure(let error):
+                    print("\(error.localizedDescription)")
                 }
             }
         }
