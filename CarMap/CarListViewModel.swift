@@ -12,7 +12,7 @@ final class CarListViewModel: BaseViewModel {
     
     var cars: [CarModel] = []
     
-    var isAscending: Bool = true {
+    var isAscending: Bool = false {
         didSet {
             sortCarsByFuelLevel()
         }

@@ -26,6 +26,8 @@ final class CarListViewController: BaseViewController<CarListViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Display from highest fuel level to lowest
+        viewModel.isAscending = false
     }
     
     // MARK: - Custom Methods
