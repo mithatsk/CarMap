@@ -198,8 +198,8 @@
 			children = (
 				8A6C5BA5259733B200973BDE /* Assets.xcassets */,
 				8A6C5BAA259733B200973BDE /* Info.plist */,
-				8A6CC53725989CC200263BE8 /* Localizable.strings */,
 				8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */,
+				8A6CC53725989CC200263BE8 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -347,8 +347,8 @@
 		8A6C5BD22597A39A00973BDE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				8A6C5BD52597A4F500973BDE /* MapViewModel.swift */,
 				8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */,
+				8A6C5BD52597A4F500973BDE /* MapViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -368,9 +368,9 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5BF62597C6BF00973BDE /* CarAnnotationView.swift */,
-				8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */,
 				8A6CC5412598C7E100263BE8 /* CarSectionsView.swift */,
 				8A6CC5432598C7EC00263BE8 /* CarSectionsView.xib */,
+				8A6CC54C2598DF4E00263BE8 /* CarSectionsViewProtocol.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
