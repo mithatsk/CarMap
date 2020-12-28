@@ -59,8 +59,19 @@
 		8A6CC56A259923D200263BE8 /* CarPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6CC569259923D200263BE8 /* CarPresentation.swift */; };
 		8A78C4C3259A2D24001CF807 /* MapDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */; };
 		8A78C4C5259A2F8C001CF807 /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */; };
+		8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4CC259A357E001CF807 /* CarMapTests.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A78C4CF259A357E001CF807 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A6C5B91259733B000973BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A6C5B98259733B000973BDE;
+			remoteInfo = CarMap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +130,9 @@
 		8A6CC569259923D200263BE8 /* CarPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPresentation.swift; sourceTree = "<group>"; };
 		8A78C4C2259A2D24001CF807 /* MapDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProvider.swift; sourceTree = "<group>"; };
 		8A78C4C4259A2F8C001CF807 /* BaseDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
+		8A78C4CA259A357E001CF807 /* CarMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A78C4CC259A357E001CF807 /* CarMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapTests.swift; sourceTree = "<group>"; };
+		8A78C4CE259A357E001CF807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +144,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A78C4C7259A357E001CF807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5B9B259733B000973BDE /* CarMap */,
+				8A78C4CB259A357E001CF807 /* CarMapTests */,
 				8A6C5B9A259733B000973BDE /* Products */,
 				ECE1A4EA0C3B5DDA8CA00F9E /* Pods */,
 				EECAA5159398F8874AFD0566 /* Frameworks */,
@@ -147,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				8A6C5B99259733B000973BDE /* CarMap.app */,
+				8A78C4CA259A357E001CF807 /* CarMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -427,6 +450,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		8A78C4CB259A357E001CF807 /* CarMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A78C4CE259A357E001CF807 /* Info.plist */,
+			);
+			path = CarMapTests;
+			sourceTree = "<group>";
+		};
 		ECE1A4EA0C3B5DDA8CA00F9E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +496,24 @@
 			productReference = 8A6C5B99259733B000973BDE /* CarMap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8A78C4C9259A357E001CF807 /* CarMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A78C4D1259A357E001CF807 /* Build configuration list for PBXNativeTarget "CarMapTests" */;
+			buildPhases = (
+				8A78C4C6259A357E001CF807 /* Sources */,
+				8A78C4C7259A357E001CF807 /* Frameworks */,
+				8A78C4C8259A357E001CF807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A78C4D0259A357E001CF807 /* PBXTargetDependency */,
+			);
+			name = CarMapTests;
+			productName = CarMapTests;
+			productReference = 8A78C4CA259A357E001CF807 /* CarMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -477,6 +526,10 @@
 				TargetAttributes = {
 					8A6C5B98259733B000973BDE = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					8A78C4C9259A357E001CF807 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 8A6C5B98259733B000973BDE;
 					};
 				};
 			};
@@ -494,6 +547,7 @@
 			projectRoot = "";
 			targets = (
 				8A6C5B98259733B000973BDE /* CarMap */,
+				8A78C4C9259A357E001CF807 /* CarMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -610,7 +664,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A78C4C6259A357E001CF807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A78C4D0259A357E001CF807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A6C5B98259733B000973BDE /* CarMap */;
+			targetProxy = 8A78C4CF259A357E001CF807 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A6C5BA7259733B200973BDE /* LaunchScreen.storyboard */ = {
@@ -705,6 +775,82 @@
 			};
 			name = Development;
 		};
+		8A78C4D2259A357E001CF807 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = CarMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mithatkaskara.CarMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarMap.app/CarMap";
+			};
+			name = Development;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -720,6 +866,14 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A6C5BB4259734B000973BDE /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		8A78C4D1259A357E001CF807 /* Build configuration list for PBXNativeTarget "CarMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A78C4D2259A357E001CF807 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
