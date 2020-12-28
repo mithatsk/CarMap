@@ -64,6 +64,7 @@
 		8A78C517259A459C001CF807 /* Bundle+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C516259A459C001CF807 /* Bundle+Test.swift */; };
 		8A78C518259A4724001CF807 /* cars_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A78C4D5259A3798001CF807 /* cars_stub.json */; };
 		8A78C51A259A6475001CF807 /* CarListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */; };
+		8A78C521259A9209001CF807 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C520259A9209001CF807 /* ConfigurationHelper.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		8A78C516259A459C001CF807 /* Bundle+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Test.swift"; sourceTree = "<group>"; };
 		8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewControllerTests.swift; sourceTree = "<group>"; };
 		8A78C51E259A8D75001CF807 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		8A78C520259A9209001CF807 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +390,7 @@
 		8A6CC53925989D7300263BE8 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				8A78C51F259A91FB001CF807 /* Configuration */,
 				8A6CC53A25989D8200263BE8 /* Localization */,
 			);
 			name = DataAccess;
@@ -501,6 +504,14 @@
 			isa = PBXGroup;
 			children = (
 				8A78C51E259A8D75001CF807 /* Development.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		8A78C51F259A91FB001CF807 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8A78C520259A9209001CF807 /* ConfigurationHelper.swift */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -691,6 +702,7 @@
 				8A6C5BBC25974B9600973BDE /* Colors.swift in Sources */,
 				8A6C5BF72597C6BF00973BDE /* CarAnnotationView.swift in Sources */,
 				8A6CC55A2598E1AA00263BE8 /* CarTableViewCell.swift in Sources */,
+				8A78C521259A9209001CF807 /* ConfigurationHelper.swift in Sources */,
 				8A6C5BEE2597BCAE00973BDE /* AssemblerExtensions.swift in Sources */,
 				8A6C5BDC2597AA3000973BDE /* UIViewControllerExtensions.swift in Sources */,
 				8A6C5BDE2597AA7D00973BDE /* StoryboardNames.swift in Sources */,
