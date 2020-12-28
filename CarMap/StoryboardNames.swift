@@ -10,4 +10,5 @@ import Foundation
 
 enum StoryboardNames: String {
     case map = "Map"
+    case list = "CarList"
 }

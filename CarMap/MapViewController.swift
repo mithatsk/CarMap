@@ -111,7 +111,7 @@ extension MapViewController: MKMapViewDelegate {
 extension MapViewController: CarSectionsViewDelegate {
     
     func displayCars() {
-        let viewController = CarListViewController.instantiate(from: "CarList") as! CarListViewController
+        let viewController = CarListViewController.instantiate(from: StoryboardNames.list.rawValue) as! CarListViewController
         viewController.viewModel.cars = viewModel.cars
         show(viewController, sender: self)
     }
