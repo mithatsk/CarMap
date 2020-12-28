@@ -54,6 +54,7 @@ final class DialogAlertView: UIView {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
         label.textAlignment = .center
+        label.numberOfLines = 0
         label.textColor = Colors.dark
         return label
     }()
