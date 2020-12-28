@@ -63,6 +63,7 @@
 		8A78C4D8259A3814001CF807 /* MapDataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C4D7259A3814001CF807 /* MapDataProviderMock.swift */; };
 		8A78C517259A459C001CF807 /* Bundle+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C516259A459C001CF807 /* Bundle+Test.swift */; };
 		8A78C518259A4724001CF807 /* cars_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A78C4D5259A3798001CF807 /* cars_stub.json */; };
+		8A78C51A259A6475001CF807 /* CarListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */; };
 		99FFA3B6C7360DAB0BB81A05 /* Pods_CarMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697F9A6CDC191CE0D579006 /* Pods_CarMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		8A78C4D5259A3798001CF807 /* cars_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cars_stub.json; sourceTree = "<group>"; };
 		8A78C4D7259A3814001CF807 /* MapDataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataProviderMock.swift; sourceTree = "<group>"; };
 		8A78C516259A459C001CF807 /* Bundle+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Test.swift"; sourceTree = "<group>"; };
+		8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +465,7 @@
 				8A78C4D6259A37C2001CF807 /* Mocks */,
 				8A78C4D3259A35FF001CF807 /* Stubs */,
 				8A78C4CC259A357E001CF807 /* CarMapTests.swift */,
+				8A78C519259A6475001CF807 /* CarListViewControllerTests.swift */,
 				8A78C4CE259A357E001CF807 /* Info.plist */,
 			);
 			path = CarMapTests;
@@ -712,6 +715,7 @@
 			files = (
 				8A78C4CD259A357E001CF807 /* CarMapTests.swift in Sources */,
 				8A78C4D8259A3814001CF807 /* MapDataProviderMock.swift in Sources */,
+				8A78C51A259A6475001CF807 /* CarListViewControllerTests.swift in Sources */,
 				8A78C517259A459C001CF807 /* Bundle+Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

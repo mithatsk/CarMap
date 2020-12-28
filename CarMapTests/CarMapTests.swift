@@ -14,6 +14,7 @@ class CarMapTests: XCTestCase {
     var mapViewController: MapViewController!
 
     override func setUp() {
+        super.setUp()
         mapViewController = initializeMapViewController()
         mapViewController.viewModel.dataProvider = MapDataProviderMock()
     }
@@ -58,6 +59,11 @@ class CarMapTests: XCTestCase {
         let secondAnnotationImageURL = "https://cdn.sixt.io/codingtask/images/mini_countryman.png"
         XCTAssertFalse(mapViewController.viewModel.annotations[0].imageURL == secondAnnotationImageURL)
         XCTAssert(mapViewController.viewModel.annotations[1].imageURL == secondAnnotationImageURL)
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        mapViewController = nil
     }
 
 }
