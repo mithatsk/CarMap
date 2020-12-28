@@ -30,4 +30,8 @@ final class MapViewModel: BaseViewModel {
         }
     }
     
+    func getCar(with id: String) -> CarModel? {
+        return cars.filter { $0.id == id }.first
+    }
+    
 }
